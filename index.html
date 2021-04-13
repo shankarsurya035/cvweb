@@ -25,7 +25,48 @@ img.emoji {
 	vertical-align: -0.1em !important;
 	background: none !important;
 	padding: 0 !important;
-}</style>
+}
+	.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+	
+	
+	</style>
 <link rel="stylesheet" id="wp-block-library-css" href="./wp-includes/css/dist/block-library/style.min.css?ver=5.7" type="text/css" media="all">
 <link rel="stylesheet" id="rns-font-css" href="https://fonts.googleapis.com/css?family=Open+Sans&#038;ver=5.7" type="text/css" media="all">
 <link rel="stylesheet" id="rns-style-css" href="./wp-content/plugins/react-and-share/assets/css/styles.css?ver=3.3" type="text/css" media="all">
@@ -276,6 +317,7 @@ var wpac_ajax_url = {"ajax_url":".\/wp-admin\/admin-ajax.php","user_id":"0","use
 				<div class="elementor-element elementor-element-7533709 elementor-widget elementor-widget-text-editor" data-id="7533709" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-text-editor elementor-clearfix"><p>The best About Us pages include some contact information. How do I get in touch with any questions? Provide phone numbers, email contacts or a Contact Us form, as well as links to your social media accounts.</p></div>
+					<button class="button"><span>Hover </span></button>
 				</div>
 				</div>
 				<div class="elementor-element elementor-element-858ffd5 elementor-widget elementor-widget-heading" data-id="858ffd5" data-element_type="widget" data-widget_type="heading.default">
